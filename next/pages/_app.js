@@ -1,9 +1,9 @@
 import '../styles/globals.css' //global css는 따른 컴포넌트에선 import 안되거 _app 에서만 가능함
-import Navbar from '../components/Navba'
+import Layout from '../components/Layout'
 
-function MyApp({ Component, pageProps }) { //Component: 렌더링할 페이지+  pageProps: 추가로작성한것
+function MyApp({ Component, pageProps }) { //Component: 렌더링할 페이지+  pageProps: getServerSideProps 리턴값
   return <div>
-    <Navbar/>
+    <Layout/>
     <Component {...pageProps} />
     <span>hello</span>
   </div>
