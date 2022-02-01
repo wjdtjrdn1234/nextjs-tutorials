@@ -15,11 +15,11 @@ module.exports = {
     return [
       {
         source: "/api/movies",
-        destination: `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`,
+        destination: `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`, //인기있는 movie 정보 받아오기
       },
       {
         source: "/api/movies/:id",
-        destination: `https://api.themoviedb.org/3/movie/:id?api_key=${API_KEY}`,
+        destination: `https://api.themoviedb.org/3/movie/:id?api_key=${API_KEY}`, //detail movie 정보 받아오기
       },
     ];
   }
